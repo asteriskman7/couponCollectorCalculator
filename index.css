@@ -1,0 +1,18 @@
+/*
+  .class
+  #id
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  /*border: 0;*/
+}
+
+body {
+  background: hsl(210, 100%, 91%);
+}
+
+.crow:nth-child(even) {
+  background: hsl(0, 0%, 80%);
+}

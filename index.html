@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Coupon Collector Calculator</title>
+    <!-- <link rel="icon" href="favicon.png"> -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 112 112%22><text y=%22.9em%22 font-size=%2290%22>&#x1f3b2;</text></svg>">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <h1>Coupon Collector Calculator</h1>
+    <table>
+      <tr><td>Number of bits:</td><td><input type='number' id='tbits'></td></tr>
+      <tr><td>Number of states:</td><td><input type='number' id='tstates'></td></tr>
+    </table>
+    <div>Expected tries: <span id='stries'></span></div>
+    <div>Stddev: <span id='sstddev'></span></div>
+    <div id='tablecontainer'></div>
+    <div>
+The <a href='https://en.wikipedia.org/wiki/Coupon_collector%27s_problem'>coupon collector problem</a>
+answers the question: "How many times should I try something before I'm likely to have
+seen all outcomes?"</div>
+    <div>
+Here, you specify the number of bits defining the state space or number of states and the expected number 
+of tries for a few confidence levels is shown.</div>
+    <div>
+Equations for expected tries and standard deviation taken from <a href='https://files.eric.ed.gov/fulltext/EJ744035.pdf'>
+a paper by John S. Croucher</a>.
+    </div>
+    <div>
+Standard normal distribution <a href='https://www.math.arizona.edu/~rsims/ma464/standardnormaltable.pdf'>
+Z table</a>.
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
